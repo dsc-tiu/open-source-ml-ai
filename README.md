@@ -15,7 +15,9 @@ And don't worry, there is something to contribute here for everyone. :smile:
 
 ## Contributions
 
-All the specific details on how to contribute along with the step by step procedure for creating and pushing a pull request have been shown in the Contributions.md file.
+Open-source contributions have large group of contributors working at once, so in order to avoid any duplication in pull requests, it is important to allocate tasks based on issues to community members and contributors. To get an idea about how to start and also see what all issues are available, or to create your own issue, check out the [Issues.md](/Issues.md) file and then move to the Issues tab of this repository.
+
+All the specific details on how to contribute along with the step by step procedure for creating and pushing a pull request have been shown in the [Contributing.md](/Contributing.md) file.
 
 ## Remember the Code of Conduct:bangbang:
 
@@ -23,7 +25,7 @@ All the specific details on how to contribute along with the step by step proced
 
 - Do not copy code from online sites and post here especially for a little advanced topics.
 
-- **Remember that it is not guaranteed that your contributions to this repository will count for your Hacktoberfest 2022 prizes.** Our goal is to not be a simple +1 to your hacktoberfest completion metric, our intent is to give you a brief and simple understanding of how open-source contributions work . **Please value learning and hands-on experience more than swags and goodies from online events!**
+- **Remember that it is not guaranteed that your contributions to this repository will count for your Hacktoberfest 2022 prizes.** Our goal is not to be a simple +1 to your hacktoberfest completion metric, our intent is to give you a brief and simple understanding of how open-source contributions work . **Please value learning and hands-on experience more than swags and goodies from online events!**
 
 - **Do not forget to check out the `Issues` tab on this repo. There, you can find the Issues that are open and you can also ask to be alloted an issue or raise your own issues before proceeding with a pull request.**
 
