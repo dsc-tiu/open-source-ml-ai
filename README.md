@@ -1,5 +1,20 @@
 # :star2: Welcome to GDSC-TIU's open source resource collection for AI-ML enthusiasts and first-time open source contributors. :star2:
 
+The ML GitHub repo for open source contributions is now open for all. 
+
+Before contributing however, 
+
+Please Note the following: :bangbang:
+
+1. Do not see this repo as an easy opportunity to get your Hacktoberfest goodies, there are many other ways to complete the event. 
+2. This repo aims to provide a starting point for open source contributors who genuinely want to learn but are at a novice level of learning.
+3. This repo has open issues from all difficulty levels. So all are welcome to participate.
+4. This repo has both code and non-code requirements so it will be easier for beginners if you are not confident in your coding abiilities.
+5. If you see that the issue you would like to solve is not present in the repository's Issues tab, then feel to create a new issue and as maintainer of the repo, I will allot you the issue and you can work on it.
+6. DO NOT FORGET TO READ ALL THE DOCUMENTATION FILES LIKE Contributing.md, README.md, Issues.md. These files are not junk or spam, they aim to guide you in your contributions and pull request journeys.
+7. Your pull request may or may not be accepted, that is at the discretion of the event organizers and maintainers.
+8. It is not guaranteed that contributions to this repo will reflect on your Hacktoberfest metrics. Approach this with an intent to learn and grow, the swags are secondary and replacable.
+
 ## Goals! :checkered_flag:
 
 The goal of this repository is to act as a resource for current and future learners who are interested in AI and ML, but do not have a proper understanding of the basics that go into ML algorithms.
