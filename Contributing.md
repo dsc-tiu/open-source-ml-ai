@@ -1,7 +1,10 @@
 # So, how do I contribute?
-Git Commands for a Simple Workflow
 
-The following steps are enough for creating a pull request if you don’t need to work on multiple pull requests to the same repository at once.
+So now that you have read the [Issues.md](Issues.md) file, and an issue has been allotted to you, this is how you can continue to the next step, which is making contributions to the repository itself.
+
+## Git Commands for a Simple Workflow
+
+The following steps are enough for creating a pull request.
 
 - Create a Fork of this repository.
 - Simply click on the “fork” button of the repository page on GitHub.
@@ -27,4 +30,5 @@ The following steps are enough for creating a pull request if you don’t need t
     ```
 
 - Create a Pull Request
+
     On the GitHub webpage of your remote fork, click the “pull request” button and make a pull request from your repo's branch to this repository's base branch. Wait for the owner to merge or comment your changes and be proud when it is merged :)
