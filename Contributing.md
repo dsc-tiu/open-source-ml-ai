@@ -11,7 +11,11 @@ The following steps are enough for creating a pull request if you don’t need t
     git clone https://github.com/USERNAME/REPOSITORY.git
     ```
 - Modify the Code
-    In your local clone, modify the code and commit them to your local clone using the git commit command.
+    Add the changed files to the staging area with the command 
+    ```
+    git add -A
+    ```
+    Once you are satisfied with the added files, you can then commit them to your local repository with the commit command as follows:
     ```
     git commit -m "INSERT YOUR COMMIT MESSAGE HERE"
     ```
@@ -23,4 +27,4 @@ The following steps are enough for creating a pull request if you don’t need t
     ```
 
 - Create a Pull Request
-    On the GitHub webpage of your remote fork, click the “pull request” button. Wait for the owner to merge or comment your changes and be proud when it is merged :)
+    On the GitHub webpage of your remote fork, click the “pull request” button and make a pull request from your repo's branch to this repository's base branch. Wait for the owner to merge or comment your changes and be proud when it is merged :)
