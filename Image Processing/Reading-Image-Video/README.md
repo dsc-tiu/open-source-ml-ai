@@ -40,3 +40,8 @@
     2. frame - frame of a video
 
     For more implementation details, please refer to the associated Python script: `read_video_opencv.py`.
+
+2. Reading webcam stream using OpenCV
+- Reading a webcam stream is almost the same as reading a video.
+- First, the path attribute in the VideoCapture() function has to be set to 0 to refer to the default computer webcam.
+- Second, the ret value in the read() function does not matter. The stream is stopped as and when the user wishes to.
