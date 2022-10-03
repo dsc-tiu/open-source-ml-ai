@@ -5,12 +5,12 @@ import os
 import cv2
 
 #Initialize path variables
-imput_path = "assets/python_logo.png"
+input_path = "assets/python_logo.png"
 output_path = "assets/python_logo_save.png"
 
 #Display the image 
 #If you are not familar with reading images using OpenCV, please refer to the 'Reading-Image-Video' folder.
-img = cv2.imread("assets/python_logo.png")
+img = cv2.imread(input_path)
 cv2.imshow("Image",img)
 
 #wait till user presses a key
