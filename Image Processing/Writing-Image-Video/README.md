@@ -32,3 +32,28 @@
     None
 
     For more details, please refer to the associated Python script `write_image_pil.py`
+
+### Writing a Video
+- OpenCV functions can be used to write a video.
+- OpenCV views a video as a sequence of frames.
+- Each frame can be stored separately.
+- Alternatively, OpenCV provides a VideoWriter function for writing videos.
+
+    **Syntax:** 
+    cv2.VideoWriter(filename, fourcc, fps, frameSize)
+
+    **Parameters:**
+
+    filename: Input video file
+    
+    fourcc: 4-character code of codec used to compress the frames
+    
+    fps: framerate of videostream
+    
+    framesize: Height and width of frame
+
+    **Return Value:**
+    None
+
+    For more details, please refer to the associated Python script `write_video_opencv.py`
+
