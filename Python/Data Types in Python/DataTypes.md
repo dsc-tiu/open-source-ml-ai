@@ -1,46 +1,47 @@
 # Python Data Types
 
 DataTypes.py :
-` data_integer = 1112132131231232
-print("Value : ", data_integer)
-print("- Type : ", type(data_integer))
 
-data_float = 1.5
-print("Value : ", data_float)
-print("- Type : ", type(data_float))
+    data_integer = 1112132131231232
+    print("Value : ", data_integer)
+    print("- Type : ", type(data_integer))
 
-data_string = "Maul"
-print("Value : ", data_string)
-print("- Type : ", type(data_string))
+    data_float = 1.5
+    print("Value : ", data_float)
+    print("- Type : ", type(data_float))
 
-data_bool = False
-print("Value : ", data_bool)
-print("- Type : ", type(data_bool))
+    data_string = "Maul"
+    print("Value : ", data_string)
+    print("- Type : ", type(data_string))
 
-data_complex = complex(5,6)
-print("Value : ", data_complex)
-print("- Type : ", type(data_complex))
+    data_bool = False
+    print("Value : ", data_bool)
+    print("- Type : ", type(data_bool))
 
-from ctypes import c_double, c_char
+    data_complex = complex(5,6)
+    print("Value : ", data_complex)
+    print("- Type : ", type(data_complex))
 
-data_c_double = c_double(10.5)
-print("Value : ", data_c_double)
-print("- Type : ", type(data_c_double)) `
+    from ctypes import c_double, c_char
+
+    data_c_double = c_double(10.5)
+    print("Value : ", data_c_double)
+    print("- Type : ", type(data_c_double)) 
 
 Output from DataTypes.py :
 
-`Value :  1112132131231232
-- Type :  <class 'int'>
-Value :  1.5
-- Type :  <class 'float'>
-Value :  Maul
-- Type :  <class 'str'>
-Value :  False
-- Type :  <class 'bool'>
-Value :  (5+6j)
-- Type :  <class 'complex'>
-Value :  c_double(10.5)
-- Type :  <class 'ctypes.c_double'>`
+    Value :  1112132131231232
+    - Type :  <class 'int'>
+    Value :  1.5
+    - Type :  <class 'float'>
+    Value :  Maul
+    - Type :  <class 'str'>
+    Value :  False
+    - Type :  <class 'bool'>
+    Value :  (5+6j)
+    - Type :  <class 'complex'>
+    Value :  c_double(10.5)
+    - Type :  <class 'ctypes.c_double'>
 
 ## Code Explanation
 Data types are an important concept in the python programming language. In Python, each value has its own python data type.
