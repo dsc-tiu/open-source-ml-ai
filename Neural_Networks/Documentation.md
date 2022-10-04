@@ -1,5 +1,5 @@
 # Neural Networks
-Neural network is a machine learning model which tries to mimic the neurons present in our body, where information in comming from every direction rather than just one in case of conventional models like linear regession, logistic regression, Natural Language Processing,etc. This information is processed by the current perceptron and passed on to next perceptron. This process goes on and on until the output/final layer is reached.
+Neural network is a machine learning model which tries to mimic the neurons present in our body, where information in coming from every direction rather than just one in case of conventional models like linear regession, logistic regression, Natural Language Processing,etc. This information is processed by the current perceptron and passed on to next perceptron. This process goes on and on until the output/final layer is reached.
 
 With Neural Networks there is a possibility of complex decision boundaries making it a more efficient non-linear model.
 
@@ -11,7 +11,7 @@ With Neural Networks there is a possibility of complex decision boundaries makin
 
 ## Perceptron 
 
-A perceptron is like a neuron which collects information from other neurons processes it and then further pass the precocessed information. There can be as many perceptron in each hidden layer and each layer can further have different activation functions. Some can have sigmoid, relu function while others can have any tangential function etc, it is totally up to our choice. But generally we use sigmoid and relu as our activation function.
+A perceptron is like a neuron which collects information from other neurons processes it and then further pass the preprocessed information. There can be as many perceptron in each hidden layer and each layer can further have different activation functions. Some can have sigmoid, relu function while others can have any tangential function etc, it is totally up to our choice. But generally we use sigmoid and relu as our activation function.
 
 </br>
 
@@ -19,8 +19,11 @@ A perceptron is like a neuron which collects information from other neurons proc
 
 </br>
 The two main operations while implementing neural networks are:
-* Forward Propagation - Forward propagation is used to evaluate the result of our model / to make predictions. As the name suggests we move from our input layer to the farthest output layer.
-* Backward Propagation - Backward propagation is used to optimize the weights and bias to increase the accuracy of our model. In other terms it is simply implemented to train our neural network.
+
+1. Forward Propagation - Forward propagation is used to evaluate the result of our model / to make predictions. As the name suggests we move from our input layer to the farthest output layer.
+
+2. Backward Propagation - Backward propagation is used to optimize the weights and bias to increase the accuracy of our model. In other terms it is simply implemented to train our neural network.
+
 In contrast to forward propagation we move backwards by pushing the error back to the previous layer and updating the weights along the way.
 
 ## Backward Propagation
