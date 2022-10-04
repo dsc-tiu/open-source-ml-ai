@@ -94,7 +94,7 @@ The derivative of sigmod is sigmoid(z)(1-sigmoid(z))
     
     </br>
 
-    <img src="https://i.ibb.co/wdyPWcp/2022-10-03-11-07-pm-Office-Lens.jpg" alt="2022-10-03-11-07-pm-Office-Lens" width =400> &nbsp; &nbsp; &nbsp; <img src="https://i.ibb.co/r43cn7N/2022-10-03-11-09-pm-Office-Lens-1.jpg" alt="2022-10-03-11-09-pm-Office-Lens-1" width=400>
+    <img src="https://i.ibb.co/wdyPWcp/2022-10-03-11-07-pm-Office-Lens.jpg" alt="2022-10-03-11-07-pm-Office-Lens" width =400> &nbsp; &nbsp;&nbsp; <img src="https://i.ibb.co/r43cn7N/2022-10-03-11-09-pm-Office-Lens-1.jpg" alt="2022-10-03-11-09-pm-Office-Lens-1" width=400>
 
     here, derivative of *E* wrt input is equal to first two derivative terms in the derivative of *E* wrt O<sub>j+1</sub>. 
     
