@@ -1,5 +1,5 @@
 # Median Filter implementation
-is a nonlinear operation often used in image processing to reduce "salt and pepper" noise. The `Median_Filter_implementation.py` method code takes 2 parameter arguments, the image array value and the image filter size.
+Median Filter is a nonlinear operation often used in image processing to reduce "salt and pepper" noise. The `Median_Filter_implementation.py` method code takes 2 parameter arguments, the image array value and the image filter size.
 Lets say you have your Image array data in a variable called data, and you want to remove this noise from your image using a 3x3 median filter. This is the function to do it
 
 ```
@@ -10,13 +10,22 @@ For a 5x5 median filter, you only need to change the second parameter argument t
 
 # Experiment
 
-###### This image is noisy image -corrupted by salt and pepper noise. We will run the code and try to remove the noise from the image.
+### This image is noisy image -corrupted by salt and pepper noise. We will run the code and try to remove the noise from the image.
 
-<p align="center"><img src=" "/></p>
+<p align="center"><img src="https://github.com/maulanaakbardj/Hacktoberfest2022-Open-source-ml-ai/blob/main/Image%20Processing/Median-Filter-implementation/imgs/img_ex.jpg?raw=true"/></p>
 
-###### This is the result after running your code with using 3x3 median filter.
+### Steps to Run the code 
 
-<p align="center"><img src=" "/></p>
+<br>Run code `Median_Filter_implementation.py` on your terminal:
+
+```
+$ cd ~/Median-Filter-implementation
+$ python Median_Filter_implementation.py
+```
+
+### This is the result after running your code with using 3x3 median filter.
+
+<p align="center"><img src="https://github.com/maulanaakbardj/Hacktoberfest2022-Open-source-ml-ai/blob/main/Image%20Processing/Median-Filter-implementation/imgs/img_result.jpg?raw=true"/></p>
 
 
 
