@@ -4,7 +4,7 @@ Natural language processing is a technique which allows us to fetch selective wo
 </br>
 <img src="https://storage.googleapis.com/aliz-website-sandbox-strapi-cms/Natural_Language_Processing_03_1_png_1a3c947369/Natural_Language_Processing_03_1_png_1a3c947369.webp" width=500>
 
-</br>
+</br>   
 
 ### Stop Words
 These are insignificant words which themselves does not mean anything individually but are used for grammar. Examples-is,are,we,all,why,when etc. These words including the punctuations are needed to be filtered out from the datasets.
