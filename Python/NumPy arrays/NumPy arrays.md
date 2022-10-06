@@ -1,11 +1,11 @@
 # **NumPy Arrays**
 
 ## About
-Numpy is a core library used in Data Science, and an array is its most central data structure. This multidimensional array object has incredible speed, and the library also provides various tools to interact with these arrays. We will go over these tools in different Python programs.
+Numpy is a core library used in Data Science, and an array is its most central data structure. NumPy aims to provide an array object that is up to 50x faster than traditional Python lists. This multidimensional array object has incredible speed, and the library also provides various tools to interact with these arrays. <br/>
+We will go over these tools in different Python programs.
 ## NumPy Array
 Firstly, what is an array? </br> 
 Where an element is found, how to interpret an element and all this information about the raw data is found in an *array*, which is a grid of values. 
-
 This grid can be indexed in different ways. The elements are all of the same type, referred to as the *array dtype*.
 An N-dimensional array is simply an array with any number of dimensions.
 ## Code explanation
