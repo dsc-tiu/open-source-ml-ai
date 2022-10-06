@@ -6,7 +6,7 @@ We will go over these tools in different Python programs.
 ## NumPy Array
 Firstly, what is an array? </br> 
 Where an element is found, how to interpret an element and all this information about the raw data is found in an *array*, which is a grid of values. 
-This grid can be indexed in different ways. The elements are all of the same type, referred to as the *array dtype*.
+This grid can be indexed in different ways. The elements are all of the same type, referred to as the *array dtype*.<br/>
 An N-dimensional array is simply an array with any number of dimensions.
 ## Code explanation
 The Python programs describe the basic functions of the NumPy array through the following sub topics:
