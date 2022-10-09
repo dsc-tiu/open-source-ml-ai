@@ -278,4 +278,12 @@
  
 |   |   |
 |   |   ├── functions.md (Markdown file for documentation on how your code works)
+		The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.
+		We can use return type of the function and data type of the arguments in python.
+		#Arguments of a Python Function
+		Arguments are the values passed inside the parenthesis of the function. A function can have any number of arguments separated by a comma.
+		Types of Arguments
+		Python supports various types of arguments that can be passed at the time of the function call.
+		Default arguments
+		A default argument is a parameter that assumes a default value if a value is not provided in the function call for that argument. 
 │   ├── Python.md (Leave this file intact)
