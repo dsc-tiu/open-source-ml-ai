@@ -1,30 +1,33 @@
 ├── Python
 │   ├── Functions in Python (add code and documentation within the new loops in python sub-folder.
 │   │   ├── functions.py (Python file showing working of Functions)
-                Python Functions is a block of statements that return the specific task.
-                Syntax: Python Functions 
+|   |   |       Python Functions is a block of statements that return the specific task.
+                ##Syntax: Python Functions 
                 def function_name(parameters)
                      #statement
                      return expression
-                Creating a python function
+		     
+                ##Creating a python function
                 We can create a python function using def keyword
                 # A simple Python function
  
                 def fun():
-                    print("Welcome to GFG")
-                Calling a  Python Function
+                    print("Welcome to Hacktoberfest")
+		    
+                ##Calling a  Python Function
                 After creating a function we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.
                 # A simple Python function
                 def fun():
-                    print("Welcome to GFG")
+                    print("Welcome to Hacktoberfest")
  
  
                 # Driver code to call a function
                 fun()
                 #Output
-                Welcome to GFG
-                Defining and calling a function with parameters
-                Syntax: Python Function with parameters 
+                Welcome to Hacktoberfest
+		
+                ##Defining and calling a function with parameters
+                #Syntax: Python Function with parameters 
 
                 def function_name(parameter: data_type) -> return_type:
                     """Doctring"""
@@ -42,8 +45,9 @@
                print(f"The addition of {num1} and {num2} results {ans}.") 
                #Output
                The addition of 5 and 15 results 20
-               #More Examples
-               # some more functions
+	       
+               ##More Examples
+               #some more functions
                def is_prime(n):
 	                  if n in [2, 3]:
 		                    return True
@@ -58,7 +62,8 @@
                 print(is_prime(78), is_prime(79))
                 #output
                 False True
-                Arguments of a Python Function
+		
+                ##Arguments of a Python Function
                 In this example, we will create a simple function to check whether the number passed as an argument to the function is even or odd.
                 # A simple Python function to check
                 # whether x is even or odd
@@ -77,8 +82,10 @@
                 #Output
                 even
                 odd
+		
                 #Types of Arguments
                 Python supports various types of arguments that can be passed at the time of the function call.
+		
                 Default arguments
                 # Python program to demonstrate
                 # default arguments
@@ -95,6 +102,7 @@
                 Output
                 x:  10
                 y:  50
+		
                 Keyword arguments
                 The idea is to allow the caller to specify the argument name with values so that caller does not need to remember the order of parameters.
 
@@ -110,6 +118,7 @@
                 #Output
                 Kamalini Das
                 Kamalini Das
+		
                 #Example 1: Variable length non-keywords argument
 
 
@@ -128,7 +137,8 @@
                 Welcome
                 to
                 Hacktoberfest
-                Example 2: Variable length keyword arguments
+		
+                #Example 2: Variable length keyword arguments
 
 
                 # Python program to illustrate
@@ -146,7 +156,8 @@
                 first == Welcome
                 mid == to
                 last == Hacktoberfest
-                Docstring
+		
+                #Docstring
                 The below syntax can be used to print out the docstring of a function:
 
                 Syntax: print(function_name.__doc__)
@@ -169,12 +180,13 @@
                 # Driver code to call the function
                 print(evenOdd.__doc__)
                 #Output
-                Function to check if the number is even or odd
+	        Function to check if the number is even or odd
+		
                 #Return statement in Python function
                 Syntax: 
 
                 return [expression_list]
-                Example: Python Function Return Statement
+                #Example: Python Function Return Statement
 
 
                 def square_value(num):
@@ -188,19 +200,21 @@
                 #Output
                 4
                 16
-                #Pass by Reference or pass by value
+		
+                ##Pass by Reference or pass by value
                 # Here x is a new reference to same list lst
                 def myFun(x):
                      x[0] = 20
  
  
                 # Driver Code (Note that lst is modified
-                # after function call.
+                # after function call.)
                 lst = [10, 11, 12, 13, 14, 15]
                 myFun(lst)
                 print(lst)
                 #Output
                 [20, 11, 12, 13, 14, 15]
+		
                 ##When we pass a reference and change the received reference to something else, the connection between the passed and received parameter is broken. For example, consider the below program as follows:
 
 
@@ -213,12 +227,13 @@
  
  
                 # Driver Code (Note that lst is not modified
-                # after function call.
+                # after function call.)
                 lst = [10, 11, 12, 13, 14, 15]
                 myFun(lst)
                 print(lst)
                 Output
                 [10, 11, 12, 13, 14, 15]
+		
                 ##Another example to demonstrate that the reference link is broken if we assign a new value (inside the function). 
 
 
@@ -237,6 +252,7 @@
                 print(x)
                 #Output
                 10
+		
                 ##Anonymous functions in Python Function
                 # Python code to illustrate the cube of a number
                 # using lambda function
@@ -251,6 +267,7 @@
                 #Output
                 343
                 343
+		
                 ##Python Function within Functions
                 # Python program to
                 # demonstrate accessing of
@@ -268,7 +285,8 @@
                 f1()
                 #Output
                 I love Open Source
-		Example of a user-defined function
+		
+		##Example of a user-defined function
 		# Program to illustrate
 		# the use of user-defined functions
 
@@ -280,7 +298,8 @@
 		num2 = 6
 
 		print("The sum is", add_numbers(num1, num2))
-                
+                #output
+		The sum is 11
 
 
                 
@@ -291,7 +310,7 @@
 |   |   |
 |   |   ├── functions.md (Markdown file for documentation on how your code works)
 		The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.
-		A python function consists of the following functions:
+		A python function consists of the following features:
 		1.Keyword def that marks the start of the function header.
 		2.A function name to uniquely identify the function. Function naming follows the same rules of writing identifiers in Python.
 		3.Parameters (arguments) through which we pass values to a function. They are optional.
@@ -299,45 +318,57 @@
 		5.Optional documentation string (docstring) to describe what the function does.
 		6.One or more valid python statements that make up the function body. Statements must have the same indentation level (usually 4 spaces).
 		7.An optional return statement to return a value from the function.
-		How to call a function in python?
+		
+		##How to call a function in python?
 		Once we have defined a function, we can call it from another function, program, or even the Python prompt. To call a function we simply type the function name with appropriate parameters.
 		Note: In python, the function definition should always be present before the function call. Otherwise, we will get an error.
 		
 		We can use return type of the function and data type of the arguments in python.
-		#Arguments of a Python Function
+		##Arguments of a Python Function
 		Arguments are the values passed inside the parenthesis of the function. A function can have any number of arguments separated by a comma.
-		Types of Arguments
+		
+		#Types of Arguments
 		Python supports various types of arguments that can be passed at the time of the function call.
-		Default arguments
+		
+		#Default arguments
 		A default argument is a parameter that assumes a default value if a value is not provided in the function call for that argument.
 		any number of arguments in a function can have a default value. But once we have a default argument, all the arguments to its right must also have default values.
-		Keyword arguments
+		
+		#Keyword arguments
 		The idea is to allow the caller to specify the argument name with values so that caller does not need to remember the order of parameters.
-		Variable-length arguments
+		
+		#Variable-length arguments
 		In Python, we can pass a variable number of arguments to a function using special symbols. There are two special symbols:
 
 		*args (Non-Keyword Arguments)
 		**kwargs (Keyword Arguments)
-		Docstring
+		
+		##Docstring
 		The first string after the function is called the Document string or Docstring in short. This is used to describe the functionality of the function. The use of docstring in functions is optional but it is considered a good practice.
 		Unless you can remember what you had for dinner last week, always document your code.We generally use triple quotes so that docstring can extend up to multiple lines. This string is available to us as the __doc__ attribute of the function.
-		Scope and Lifetime of variables
+		
+		##Scope and Lifetime of variables
 		Scope of a variable is the portion of a program where the variable is recognized. Parameters and variables defined inside a function are not visible from outside the function. Hence, they have a local scope.The lifetime of a variable is the period throughout which the variable exists in the memory. 
 		The lifetime of variables inside a function is as long as the function executes.
 		They are destroyed once we return from the function. Hence, a function does not remember the value of a variable from its previous calls.
 		On the other hand, variables outside of the function are visible from inside. They have a global scope.
 		We can read these values from inside the function but cannot change (write) them. In order to modify the value of variables outside the function, they must be declared as global variables using the keyword global.
-		Return statement in Python function
+		
+		##Return statement in Python function
 		The function return statement is used to exit from a function and go back to the function caller and return the specified value or data item to the caller.
 		The return statement can consist of a variable, an expression, or a constant which is returned to the end of the function execution. If none of the above is present with the return statement a None object is returned.
-		Pass by Reference or pass by value
+		
+		##Pass by Reference or pass by value
 		One important thing to note is, in Python every variable name is a reference. When we pass a variable to a function, a new reference to the object is created.
 		When we pass a reference and change the received reference to something else, the connection between the passed and received parameter is broken. 
-		Anonymous functions in Python Function
+		
+		##Anonymous functions in Python Function
 		In Python, an anonymous function means that a function is without a name. As we already know the def keyword is used to define the normal functions and the lambda keyword is used to create anonymous functions.
-		Python Function within Functions
+		
+		##Python Function within Functions
 		A function that is defined inside another function is known as the inner function or nested function. Nested functions are able to access variables of the enclosing scope. Inner functions are used so that they can be protected from everything happening outside the function.
-		Python Built-in Functions
+		
+		##Python Built-in Functions
 		Python has several functions that are readily available for use. These functions are called built-in functions.
 		Python abs()
 		returns absolute value of a number
@@ -542,6 +573,7 @@
 
 		Python __import__()
 		Function called by the import statement
+		
 		##What are user-defined functions in Python?
 		Functions that we define ourselves to do certain specific task are referred as user-defined functions. The way in which we define and call functions in Python are already discussed.
 
@@ -549,7 +581,7 @@
 
 		All the other functions that we write on our own fall under user-defined functions. So, our user-defined function could be a library function to someone else.
 
-		Advantages of user-defined functions
+		#Advantages of user-defined functions
 		User-defined functions help to decompose a large program into small segments which makes program easy to understand, maintain and debug.
 		If repeated code occurs in a program. Function can be used to include those codes and execute when needed by calling that function.
 		Programmars working on large project can divide the workload by making different functions.
