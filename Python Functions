@@ -23,6 +23,7 @@
 |   |   |
 |   |   |       # Driver code to call a function
 |   |   |           fun()
+|   |   |
 |   |   |       #Output
 |   |   |       Welcome to Hacktoberfest
 |   |	|	
@@ -42,7 +43,8 @@
 |   |   |      # Driver code
 |   |   |      num1, num2 = 5, 15
 |   |   |      ans = add(num1, num2)
-|   |   |      print(f"The addition of {num1} and {num2} results {ans}.") 
+|   |   |      print(f"The addition of {num1} and {num2} results {ans}.")
+|   |   |
 |   |   |      #Output
 |   |   |      The addition of 5 and 15 results 20
 |   |	|      
@@ -60,6 +62,7 @@
 |   |	|	                     r += 2
 |   |	|                 return True
 |   |   |       print(is_prime(78), is_prime(79))
+|   |   |
 |   |   |       #output
 |   |   |       False True
 |   |	|	
@@ -79,6 +82,7 @@
 |   |   |       # Driver code to call the function
 |   |   |       evenOdd(2)
 |   |   |       evenOdd(3)
+|   |   |
 |   |   |       #Output
 |   |   |       even
 |   |   |       odd
@@ -99,6 +103,7 @@
 |   |   |       # Driver code (We call myFun() with only
 |   |   |       # argument)
 |   |   |       myFun(10)
+|   |   |
 |   |   |       Output
 |   |   |       x:  10
 |   |   |       y:  50
@@ -115,6 +120,7 @@
 |   |   |       # Keyword arguments
 |   |   |       student(firstname='Kamalini', lastname='Das')
 |   |   |       student(lastname='Das', firstname='Kamalini')
+|   |   |
 |   |   |       #Output
 |   |   |       Kamalini Das
 |   |   |       Kamalini Das
@@ -129,177 +135,184 @@
 |   |   |        def myFun(*argv):
 |   |   |             for arg in argv:
 |   |   |                 print(arg)
- 
- 
-                myFun('Hello', 'Welcome', 'to', 'Hacktoberfest')
-                Output
-                Hello
-                Welcome
-                to
-                Hacktoberfest
-		
-                #Example 2: Variable length keyword arguments
-
-
-                # Python program to illustrate
-                # *kwargs for variable number of keyword arguments
- 
- 
-                def myFun(**kwargs):
-                      for key, value in kwargs.items():
-                           print("%s == %s" % (key, value))
- 
- 
-                # Driver code
-                myFun(first='Welcome', mid='to', last='Hacktoberfest')
-                #Output
-                first == Welcome
-                mid == to
-                last == Hacktoberfest
-		
-                #Docstring
-                The below syntax can be used to print out the docstring of a function:
-
-                Syntax: print(function_name.__doc__)
-                Example: Adding Docstring to the function
-
-
-                # A simple Python function to check
-                # whether x is even or odd
- 
- 
-                def evenOdd(x):
-                      """Function to check if the number is even or odd"""
-     
-                      if (x % 2 == 0):
-                            print("even")
-                      else:
-                            print("odd")
- 
- 
-                # Driver code to call the function
-                print(evenOdd.__doc__)
-                #Output
-	        Function to check if the number is even or odd
-		
-                #Return statement in Python function
-                Syntax: 
-
-                return [expression_list]
-                #Example: Python Function Return Statement
-
-
-                def square_value(num):
-                    """This function returns the square
-                    value of the entered number"""
-                    return num**2
- 
- 
-                print(square_value(2))
-                print(square_value(-4))
-                #Output
-                4
-                16
-		
-                ##Pass by Reference or pass by value
-                # Here x is a new reference to same list lst
-                def myFun(x):
-                     x[0] = 20
- 
- 
-                # Driver Code (Note that lst is modified
-                # after function call.)
-                lst = [10, 11, 12, 13, 14, 15]
-                myFun(lst)
-                print(lst)
-                #Output
-                [20, 11, 12, 13, 14, 15]
-		
-                ##When we pass a reference and change the received reference to something else, the connection between the passed and received parameter is broken. For example, consider the below program as follows:
-
-
-                def myFun(x):
- 
-                      # After below line link of x with previous
-                      # object gets broken. A new object is assigned
-                      # to x.
-                      x = [20, 30, 40]
- 
- 
-                # Driver Code (Note that lst is not modified
-                # after function call.)
-                lst = [10, 11, 12, 13, 14, 15]
-                myFun(lst)
-                print(lst)
-                Output
-                [10, 11, 12, 13, 14, 15]
-		
-                ##Another example to demonstrate that the reference link is broken if we assign a new value (inside the function). 
-
-
-                def myFun(x):
- 
-                      # After below line link of x with previous
-                      # object gets broken. A new object is assigned
-                      # to x.
-                      x = 20
- 
- 
-                # Driver Code (Note that lst is not modified
-                # after function call.
-                x = 10
-                myFun(x)
-                print(x)
-                #Output
-                10
-		
-                ##Anonymous functions in Python Function
-                # Python code to illustrate the cube of a number
-                # using lambda function
- 
- 
-                def cube(x): return x*x*x
- 
-                cube_v2 = lambda x : x*x*x
- 
-                print(cube(7))
-                print(cube_v2(7))
-                #Output
-                343
-                343
-		
-                ##Python Function within Functions
-                # Python program to
-                # demonstrate accessing of
-                # variables of nested functions
-
-                def f1():
-	                  s = 'I love Open Source'
-	
-	                  def f2():
-		                    print(s)
-		
-	                  f2()
-
-                # Driver's code
-                f1()
-                #Output
-                I love Open Source
-		
-		##Example of a user-defined function
-		# Program to illustrate
-		# the use of user-defined functions
-
-		def add_numbers(x,y):
-   		sum = x + y
-   		return sum
-
-		num1 = 5
-		num2 = 6
-
-		print("The sum is", add_numbers(num1, num2))
-                #output
-		The sum is 11
+|   |   |
+|   |   |
+|   |   |       myFun('Hello', 'Welcome', 'to', 'Hacktoberfest')
+|   |   |
+|   |   |       #utput
+|   |   |       Hello
+|   |   |       Welcome
+|   |   |       to
+|   |   |       Hacktoberfest
+|   |	|	
+|   |   |       #Example 2: Variable length keyword arguments
+|   |   |
+|   |   |
+|   |   |       # Python program to illustrate
+|   |   |       # *kwargs for variable number of keyword arguments
+|   |   |
+|   |   |
+|   |   |        def myFun(**kwargs):
+|   |   |             for key, value in kwargs.items():
+|   |   |                  print("%s == %s" % (key, value))
+|   |   |
+|   |   |
+|   |   |       # Driver code
+|   |   |       myFun(first='Welcome', mid='to', last='Hacktoberfest')
+|   |   |
+|   |   |       #Output
+|   |   |       first == Welcome
+|   |   |       mid == to
+|   |   |       last == Hacktoberfest
+|   |	|
+|   |   |       #Docstring
+|   |   |      The below syntax can be used to print out the docstring of a function:
+|   |   |
+|   |   |       Syntax: print(function_name.__doc__)
+|   |   |       Example: Adding Docstring to the function
+|   |   |
+|   |   |
+|   |   |       # A simple Python function to check
+|   |   |       # whether x is even or odd
+|   |   |
+|   |   |
+|   |   |       def evenOdd(x):
+|   |   |             """Function to check if the number is even or odd"""
+|   |   |
+|   |   |             if (x % 2 == 0):
+|   |   |                   print("even")
+|   |   |             else:
+|   |   |                   print("odd")
+|   |   |
+|   |   |
+|   |   |       # Driver code to call the function
+|   |   |       print(evenOdd.__doc__)
+|   |   |
+|   |   |       #Output
+|   |   |       Function to check if the number is even or odd
+|   |   |
+|   |   |       ##Return statement in python function
+|   |   |       Syntax: 
+|   |   |
+|   |   |       return [expression_list]
+|   |   |       #Example: Python Function Return Statement
+|   |   |
+|   |   |       def square_value(num):
+|   |   |           """This function returns the square
+|   |   |           value of the entered number"""
+|   |   |           return num**2
+|   |   |
+|   |   |
+|   |   |       print(square_value(2))
+|   |   |       print(square_value(-4))
+|   |   |
+|   |   |       #Output
+|   |   |       4
+|   |   |       16
+|   |   |
+|   |   |       ##Pass by Reference or pass by value
+|   |   |       # Here x is a new reference to same list lst
+|   |   |       def myFun(x):
+|   |   |            x[0] = 20
+|   |   |
+|   |   |
+|   |   |       # Driver Code (Note that lst is modified
+|   |   |       # after function call.)
+|   |   |       lst = [10, 11, 12, 13, 14, 15]
+|   |   |       myFun(lst)
+|   |   |       print(lst)
+|   |   |
+|   |   |       #Output
+|   |   |       [20, 11, 12, 13, 14, 15]
+|   |   |
+|   |   |       ##When we pass a reference and change the received reference to something else, the connection between the passed and received parameter is broken. 
+|   |   |       For example, consider the below program as follows:
+|   |   |
+|   |   |
+|   |   |       def myFun(x):
+|   |   |
+|   |   |             # After below line link of x with previous
+|   |   |             # object gets broken. A new object is assigned
+|   |   |             # to x.
+|   |   |             x = [20, 30, 40]
+|   |   |
+|   |   |
+|   |   |       # Driver Code (Note that lst is not modified
+|   |   |       # after function call.)
+|   |   |       lst = [10, 11, 12, 13, 14, 15]
+|   |   |       myFun(lst)
+|   |   |       print(lst)
+|   |   |
+|   |   |       Output
+|   |   |       [10, 11, 12, 13, 14, 15]
+|   |   |
+|   |   |       ##Another example to demonstrate that the reference link is broken if we assign a new value (inside the function). 
+|   |   |
+|   |   |
+|   |   |       def myFun(x):
+|   |   |
+|   |   |             # After below line link of x with previous
+|   |   |             # object gets broken. A new object is assigned
+|   |   |             # to x.
+|   |   |             x = 20
+|   |   |
+|   |   |
+|   |   |       # Driver Code (Note that lst is not modified
+|   |   |       # after function call.
+|   |   |       x = 10
+|   |   |      myFun(x)
+|   |   |       print(x)
+|   |   |
+|   |   |       #Output
+|   |   |       10
+|   |   |
+|   |   |       ##Anonymous functions in Python Function
+|   |   |       # Python code to illustrate the cube of a number
+|   |   |       # using lambda function
+|   |   |
+|   |   |       def cube(x): return x*x*x
+|   |   |
+|   |   |       def cube(x): return x*x*x
+|   |   |
+|   |   |       print(cube(7))
+|   |   |       print(cube_v2(7))
+|   |   |
+|   |   |       #Output
+|   |   |       343
+|   |   |       343
+|   |   |
+|   |   |       ##Python Function within Functions
+|   |   |       # Python program to
+|   |   |       # demonstrate accessing of
+|   |   |       # variables of nested functions
+|   |   |
+|   |   |       def f1():
+|   |   |          s = 'I love Open Source'
+|   |   |
+|   |   |          def f2():
+|   |   |            print(s)
+|   |   |
+|   |   |          f2()
+|   |   |
+|   |   |       # Driver's code
+|   |   |       f1()
+|   |   |       #Output
+|   |   |       I love Open Source
+|   |   |
+|   |   |       #Example
+|   |   |       #Program to illustrate
+|   |   |       # the use of user-defined functions
+|   |   |
+|   |   |       def add_numbers(x,y):
+|   |   |       sum = x + y
+|   |   |       return sum
+|   |   |
+|   |   |       num1 = 5
+|   |   |       num2 = 6
+|   |   |
+|   |   |       print("The sum is", add_numbers(num1, num2))
+|   |   |       #output
+|   |   |       The sum is 11
 |   |   |
 |   |   ├── functions.md (Markdown file for documentation on how your code works)
 		The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.
