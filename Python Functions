@@ -2,133 +2,133 @@
 │   ├── Functions in Python (add code and documentation within the new loops in python sub-folder.
 │   │   ├── functions.py (Python file showing working of Functions)
 |   |   |       Python Functions is a block of statements that return the specific task.
-                ##Syntax: Python Functions 
-                def function_name(parameters)
-                     #statement
-                     return expression
-		     
-                ##Creating a python function
-                We can create a python function using def keyword
-                # A simple Python function
- 
-                def fun():
-                    print("Welcome to Hacktoberfest")
-		    
-                ##Calling a  Python Function
-                After creating a function we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.
-                # A simple Python function
-                def fun():
-                    print("Welcome to Hacktoberfest")
- 
- 
-                # Driver code to call a function
-                fun()
-                #Output
-                Welcome to Hacktoberfest
-		
-                ##Defining and calling a function with parameters
-                #Syntax: Python Function with parameters 
-
-                def function_name(parameter: data_type) -> return_type:
-                    """Doctring"""
-                    # body of the function
-                    return expression
-                #Example
-               def add(num1: int, num2: int) -> int:
-	                  """Add two numbers"""
-	                  num3 = num1 + num2
-
-	                  return num3
-               # Driver code
-               num1, num2 = 5, 15
-               ans = add(num1, num2)
-               print(f"The addition of {num1} and {num2} results {ans}.") 
-               #Output
-               The addition of 5 and 15 results 20
-	       
-               ##More Examples
-               #some more functions
-               def is_prime(n):
-	                  if n in [2, 3]:
-		                    return True
-	                  if (n == 1) or (n % 2 == 0):
-		                    return False
-	                  r = 3
-	                  while r * r <= n:
-		                    if n % r == 0:
-			                      return False
-		                     r += 2
-	                  return True
-                print(is_prime(78), is_prime(79))
-                #output
-                False True
-		
-                ##Arguments of a Python Function
-                In this example, we will create a simple function to check whether the number passed as an argument to the function is even or odd.
-                # A simple Python function to check
-                # whether x is even or odd
-
-
-                def evenOdd(x):
-	                     if (x % 2 == 0):
-		            print("even")
-	                      else:
-		            print("odd")
-
-
-                # Driver code to call the function
-                evenOdd(2)
-                evenOdd(3)
-                #Output
-                even
-                odd
-		
-                #Types of Arguments
-                Python supports various types of arguments that can be passed at the time of the function call.
-		
-                Default arguments
-                # Python program to demonstrate
-                # default arguments
-
-
-                def myFun(x, y=50):
-	                    print("x: ", x)
-	                    print("y: ", y)
-
-
-                # Driver code (We call myFun() with only
-                # argument)
-                myFun(10)
-                Output
-                x:  10
-                y:  50
-		
-                Keyword arguments
-                The idea is to allow the caller to specify the argument name with values so that caller does not need to remember the order of parameters.
-
-
-                # Python program to demonstrate Keyword Arguments
-                def student(firstname, lastname):
-                      print(firstname, lastname)
- 
- 
-                # Keyword arguments
-                student(firstname='Kamalini', lastname='Das')
-                student(lastname='Das', firstname='Kamalini')
-                #Output
-                Kamalini Das
-                Kamalini Das
-		
-                #Example 1: Variable length non-keywords argument
-
-
-                # Python program to illustrate
-                # *args for variable number of arguments
- 
- 
-                def myFun(*argv):
-                      for arg in argv:
-                          print(arg)
+|   |   |       ##Syntax: Python Functions 
+|   |   |          def function_name(parameters)
+|   |   |            #statement
+|   |   |            return expression
+|   |   |
+|   |   |       ##Creating a python function
+|   |   |       We can create a python function using def keyword
+|   |   |       # A simple Python function
+|   |   |
+|   |   |        def fun():
+|   |   |           print("Welcome to Hacktoberfest")
+|   |	|	    
+|   |   |       ##Calling a  Python Function
+|   |   |       After creating a function we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.
+|   |   |       # A simple Python function
+|   |   |       def fun():
+|   |   |           print("Welcome to Hacktoberfest")
+|   |   |
+|   |   |
+|   |   |       # Driver code to call a function
+|   |   |           fun()
+|   |   |       #Output
+|   |   |       Welcome to Hacktoberfest
+|   |	|	
+|   |   |       ##Defining and calling a function with parameters
+|   |   |       #Syntax: Python Function with parameters 
+|   |   |
+|   |   |       def function_name(parameter: data_type) -> return_type:
+|   |   |           """Doctring"""
+|   |   |           # body of the function
+|   |   |           return expression
+|   |   |      #Example
+|   |   |      def add(num1: int, num2: int) -> int:
+|   |	|               """Add two numbers"""
+|   |	|               num3 = num1 + num2
+|   |   |
+|   |	|               return num3
+|   |   |      # Driver code
+|   |   |      num1, num2 = 5, 15
+|   |   |      ans = add(num1, num2)
+|   |   |      print(f"The addition of {num1} and {num2} results {ans}.") 
+|   |   |      #Output
+|   |   |      The addition of 5 and 15 results 20
+|   |	|      
+|   |   |      ##More Examples
+|   |   |      #some more functions
+|   |   |      def is_prime(n):
+|   |	|                 if n in [2, 3]:
+|   |	|	                    return True
+|   |	|                 if (n == 1) or (n % 2 == 0):
+|   |	|	                    return False
+|   |	|                 r = 3
+|   |	|                 while r * r <= n:
+|   |	|	                    if n % r == 0:
+|   |	|		            return False
+|   |	|	                     r += 2
+|   |	|                 return True
+|   |   |       print(is_prime(78), is_prime(79))
+|   |   |       #output
+|   |   |       False True
+|   |	|	
+|   |   |       ##Arguments of a Python Function
+|   |   |       In this example, we will create a simple function to check whether the number passed as an argument to the function is even or odd.
+|   |   |       # A simple Python function to check
+|   |   |       # whether x is even or odd
+|   |   |
+|   |   |
+|   |   |       def evenOdd(x):
+|   |	|                     if (x % 2 == 0):
+|   |	|	            print("even")
+|   |	|                     else:
+|   |	|	            print("odd")
+|   |   |
+|   |   |
+|   |   |       # Driver code to call the function
+|   |   |       evenOdd(2)
+|   |   |       evenOdd(3)
+|   |   |       #Output
+|   |   |       even
+|   |   |       odd
+|   |	|	
+|   |   |       ##Types of Arguments
+|   |   |       Python supports various types of arguments that can be passed at the time of the function call.
+|   |	|	
+|   |   |       Default arguments
+|   |   |       # Python program to demonstrate
+|   |   |       # default arguments
+|   |   |
+|   |   |
+|   |   |        def myFun(x, y=50):
+|   |	|                   print("x: ", x)
+|   |	|                   print("y: ", y)
+|   |   |
+|   |   |
+|   |   |       # Driver code (We call myFun() with only
+|   |   |       # argument)
+|   |   |       myFun(10)
+|   |   |       Output
+|   |   |       x:  10
+|   |   |       y:  50
+|   |	|	
+|   |   |       Keyword arguments
+|   |   |       The idea is to allow the caller to specify the argument name with values so that caller does not need to remember the order of parameters.
+|   |   |
+|   |   |
+|   |   |       # Python program to demonstrate Keyword Arguments
+|   |   |        def student(firstname, lastname):
+|   |   |              print(firstname, lastname)
+|   |   |
+|   |   |
+|   |   |       # Keyword arguments
+|   |   |       student(firstname='Kamalini', lastname='Das')
+|   |   |       student(lastname='Das', firstname='Kamalini')
+|   |   |       #Output
+|   |   |       Kamalini Das
+|   |   |       Kamalini Das
+|   |	|	
+|   |   |       #Example 1: Variable length non-keywords argument
+|   |   |
+|   |   |
+|   |   |       # Python program to illustrate
+|   |   |       # *args for variable number of arguments
+|   |   |
+|   |   |
+|   |   |        def myFun(*argv):
+|   |   |             for arg in argv:
+|   |   |                 print(arg)
  
  
                 myFun('Hello', 'Welcome', 'to', 'Hacktoberfest')
@@ -300,13 +300,6 @@
 		print("The sum is", add_numbers(num1, num2))
                 #output
 		The sum is 11
-
-
-                
-
-
-
- 
 |   |   |
 |   |   ├── functions.md (Markdown file for documentation on how your code works)
 		The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.
@@ -585,8 +578,5 @@
 		User-defined functions help to decompose a large program into small segments which makes program easy to understand, maintain and debug.
 		If repeated code occurs in a program. Function can be used to include those codes and execute when needed by calling that function.
 		Programmars working on large project can divide the workload by making different functions.
-
-
-
 
 │   ├── Python.md (Leave this file intact)
